@@ -632,7 +632,7 @@ public:
     CTestNetParams()
     {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 210240;
+        consensus.nSubsidyHalvingInterval = 262500;
         consensus.nSmartnodePaymentsStartBlock = 1000; // not true, but it's ok as long as it's less then nSmartnodePaymentsIncreaseBlock
         consensus.nSmartnodePaymentsIncreaseBlock = 4030;
         consensus.nSmartnodePaymentsIncreasePeriod = 10;
@@ -782,7 +782,7 @@ public:
     CDevNetParams()
     {
         strNetworkID = "devnet";
-        consensus.nSubsidyHalvingInterval = 210240;
+        consensus.nSubsidyHalvingInterval = 262500;
         consensus.nSmartnodePaymentsStartBlock = 4010; // not true, but it's ok as long as it's less then nSmartnodePaymentsIncreaseBlock
         consensus.nSmartnodePaymentsIncreaseBlock = 4030;
         consensus.nSmartnodePaymentsIncreasePeriod = 10;
