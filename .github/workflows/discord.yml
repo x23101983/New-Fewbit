@@ -1,6 +1,6 @@
 name: Discord Notification
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   notify:
@@ -9,10 +9,5 @@ jobs:
       - name: Send message to Discord
         uses: Ilshidur/action-discord@master
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: |
-            📢 Evento GitHub:
-            ▶️ Azione: ${{ github.event_name }}
-            🔧 Repository: ${{ github.repository }}
-            👤 Autore: ${{ github.actor }}
-            💬 Messaggio: ${{ github.event.head_commit.message }}
+          entryPoint: "/usr/bin/curl"
+          args: "-X POST --data-urlencode 'payload_json={\"content\": \"Test message from GitHub\"}' ${GITHUB_TOKEN}"
