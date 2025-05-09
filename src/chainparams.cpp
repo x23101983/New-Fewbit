@@ -550,6 +550,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x14cb17bc7b9d969d93c3a50a225166818638cede0727bc776cffd79746adc01f"));
 
         vSeeds.emplace_back("89.168.18.209");
+        vSeeds.emplace_back("89.168.20.232");
         vSeeds.emplace_back("fewbit.online");
 
         // FewBit addresses start with 'F'
@@ -703,6 +704,7 @@ public:
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
+        vSeeds.emplace_back("89.168.18.209");
         vSeeds.emplace_back("89.168.20.232");
         vSeeds.emplace_back("fewbit.online");
 
