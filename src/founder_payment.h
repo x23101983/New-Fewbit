@@ -18,7 +18,7 @@
 #include <string>
 using namespace std;
 
-static const string DEFAULT_FOUNDER_ADDRESS = "FJ4QNkE7p9mWvEYKAc9zNNRxk6vkaNMuUu";
+static const string DEFAULT_FOUNDER_ADDRESS = "FBA69LP6syGpa3zGiiaQmkSUTY2XrtQbov";
 struct FounderRewardStructure {
     int blockHeight;
     int rewardPercentage;
