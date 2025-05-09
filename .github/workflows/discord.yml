@@ -6,9 +6,9 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up curl
-        run: sudo apt-get install curl
-
+      - name: Install curl
+        run: sudo apt-get install -y curl
+        
       - name: Send message to Discord
         run: |
-          curl -X POST --data-urlencode "payload_json={\"content\": \"Test message from GitHub\"}" ${DISCORD_WEBHOOK}
+          curl -X POST --data-urlencode "payload_json={\"content\": \"Test message from GitHub\"}" ${{ secrets.DISCORD_WEBHOOK }}
