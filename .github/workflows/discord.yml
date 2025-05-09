@@ -11,4 +11,4 @@ jobs:
 
       - name: Send message to Discord
         run: |
-          curl -X POST -H "Content-Type: application/json" -d '{"content": "📢 Evento GitHub:\n▶️ Azione: push\n🔧 Repository: x23101983/New-Fewbit\n👤 Autore: x23101983\n💬 Messaggio: Update chainparams.cpp"}' https://discord.com/api/webhooks/1370363547413909564/UvwXHJ-odwQ-i79qNfqONkhpAzEr5x9zo7BERsOqUYKyYALie4SnKp-heLaWPRoz8tPK
+          curl -X POST -H "Content-Type: application/json" -d '{"content": "📢 Evento GitHub:\n▶️ Azione: push\n🔧 Repository: x23101983/New-Fewbit\n👤 Autore: x23101983\n💬 Messaggio: Update Github"}' https://discord.com/api/webhooks/1370363547413909564/UvwXHJ-odwQ-i79qNfqONkhpAzEr5x9zo7BERsOqUYKyYALie4SnKp-heLaWPRoz8tPK
