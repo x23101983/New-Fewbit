@@ -1016,7 +1016,7 @@ public:
         // regtest usually has no smartnodes in most tests, so don't check for upgraged MNs
         fBIP9CheckSmartnodesUpgraded = false;
         std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 20}}; // 20% founder/dev fee forever
-        consensus.nFounderPayment = FounderPayment(rewardStructures, 266000, "FBA69LP6syGpa3zGiiaQmkSUTY2XrtQbov");
+        consensus.nFounderPayment = FounderPayment(rewardStructures, 262500, "FBA69LP6syGpa3zGiiaQmkSUTY2XrtQbov");
 
         checkpointData = {
             {
