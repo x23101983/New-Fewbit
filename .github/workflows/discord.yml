@@ -11,20 +11,4 @@ jobs:
 
       - name: Send message to Discord
         run: |
-          MESSAGE="📢 Evento GitHub:"
-          
-          # Aggiungi dettagli sull'azione (push o pull_request)
-          if [[ "${{ github.event_name }}" == "push" ]]; then
-            MESSAGE="${MESSAGE}\n▶️ Azione: push"
-            MESSAGE="${MESSAGE}\n🔧 Repository: ${{ github.repository }}"
-            MESSAGE="${MESSAGE}\n👤 Autore: ${{ github.actor }}"
-            MESSAGE="${MESSAGE}\n💬 Messaggio: ${{ github.head_ref }} commit: ${{ github.sha }}"
-          elif [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            MESSAGE="${MESSAGE}\n▶️ Azione: pull_request"
-            MESSAGE="${MESSAGE}\n🔧 Repository: ${{ github.repository }}"
-            MESSAGE="${MESSAGE}\n👤 Autore: ${{ github.actor }}"
-            MESSAGE="${MESSAGE}\n💬 Pull Request: ${{ github.event.pull_request.title }} (${ { github.event.pull_request.url }})" https://discord.com/api/webhooks/1370363547413909564/UvwXHJ-odwQ-i79qNfqONkhpAzEr5x9zo7BERsOqUYKyYALie4SnKp-heLaWPRoz8tPK
-          fi
-
-          # Invia il messaggio al webhook Discord
-          curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"$MESSAGE\"}" 
+          curl -X POST -H "Content-Type: application/json" -d '{"content": "📢 Evento GitHub:\n▶️ Azione: push\n🔧 Repository: x23101983/New-Fewbit\n👤 Autore: x23101983\n💬 Messaggio: Update chainparams.cpp"}' https://discord.com/api/webhooks/1370363547413909564/UvwXHJ-odwQ-i79qNfqONkhpAzEr5x9zo7BERsOqUYKyYALie4SnKp-heLaWPRoz8tPK
