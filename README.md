@@ -1,4 +1,4 @@
-# FewBit Coin - Balances self-governance between SmartNodes, Staking System and Miners.
+# FewBit NetworK - Balances self-governance between SmartNodes, Staking System and Miners.
 
 FewBit operates on a system of self-governance, where stakeholders including stakers, token holders, Service Node operators, and others vested in the blockchain can collectively make decisions.
 
@@ -16,9 +16,10 @@ information or see https://opensource.org/licenses/MIT.
 
 ## Development Process
 
-The `master` branch is meant to be stable. Development is done in separate branches.
-[Tags](https://github.com/FewBit-Coin/Core-Wallet/tags) are created to indicate new official,
-stable release versions of FewBit Core Wallet.
-
+This repository is a fork of the FewBit Core Wallet project.
+The master branch contains the stable, customized version.
+Development is carried out in separate branches.
+Tags are created to indicate the official, stable releases of this fork of the FewBit Core Wallet.
+[Tags](https://github.com/x23101983/New-Fewbit/tags) 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
