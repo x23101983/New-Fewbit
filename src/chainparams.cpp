@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020-2022 The FewBit developers
+// Copyright (c) 2024-2025 The FewBit developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -549,8 +549,8 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x2e3f75b45a25238f94d44655a44f5259c3ba4d4d031ec2f7485cafdd338092c8"));
         assert(genesis.hashMerkleRoot == uint256S("0x14cb17bc7b9d969d93c3a50a225166818638cede0727bc776cffd79746adc01f"));
 
-        vSeeds.emplace_back("95.179.185.30");
-        vSeeds.emplace_back("node.fewbit.net");
+        vSeeds.emplace_back("89.168.18.209");
+        vSeeds.emplace_back("fewbit.online");
 
         // FewBit addresses start with 'F'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 35);
@@ -569,8 +569,8 @@ public:
         //        	std::cout << "mainnet is disable" << endl;
         //        	exit(0);
         //        }
-        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 5}}; // 8% founder/dev fee forever
-        consensus.nFounderPayment = FounderPayment(rewardStructures, 250);
+        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 20}}; // 20% founder/dev fee forever
+        consensus.nFounderPayment = FounderPayment(rewardStructures, 262500);
         consensus.nCollaterals = SmartnodeCollaterals(
             {{88720, 6000 * COIN},
                 {132720, 8000 * COIN},
@@ -578,7 +578,7 @@ public:
                 {220720, 12500 * COIN},
                 {264720, 15000 * COIN},
                 {INT_MAX, 18000 * COIN}},
-            {{5761, 0}, {INT_MAX, 65}});
+            {{5761, 0}, {INT_MAX, 50}});
         // FutureRewardShare defaultShare(0.8,0.2,0.0);
         consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.8, 0.2, 0.0);
 
@@ -703,8 +703,8 @@ public:
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("109.236.81.133");
-        vSeeds.emplace_back("mtn.fewbit.com");
+        vSeeds.emplace_back("89.168.20.232");
+        vSeeds.emplace_back("fewbit.online");
 
         // Testnet FewBit addresses start with 'f'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 95);
@@ -733,12 +733,12 @@ public:
 
         consensus.nCollaterals = SmartnodeCollaterals(
             {{INT_MAX, 60000 * COIN}},
-            {{INT_MAX, 20}});
+            {{INT_MAX, 50}});
 
         consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.8, 0.2, 0.0);
 
-        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 10}}; // 5% founder/dev fee forever
-        consensus.nFounderPayment = FounderPayment(rewardStructures, 1, "rghjACzPtVAN2wydgDbn9Jq1agREu6rH1e");
+        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 20}}; // 20% founder/dev fee forever
+        consensus.nFounderPayment = FounderPayment(rewardStructures, 1, "FBA69LP6syGpa3zGiiaQmkSUTY2XrtQbov");
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
@@ -755,7 +755,7 @@ public:
         nPoolNewMaxParticipants = 20;
         nFulfilledRequestExpireTime = 5 * 60; // fulfilled requests expire in 5 minutes
 
-        vSporkAddresses = {"rsqc2caFRG6myRdzKipP4PpVW9LnFaG7CH"};
+        vSporkAddresses = {"F7ceUTJZP9ncaCJWpoDVeHWnFyp2Haq1gs"};
         nMinSporkKeys = 1;
         fBIP9CheckSmartnodesUpgraded = true;
 
@@ -850,8 +850,8 @@ public:
 
         consensus.nFutureRewardShare = Consensus::FutureRewardShare(0.8, 0.2, 0.0);
 
-        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 5}}; // 5% founder/dev fee forever
-        consensus.nFounderPayment = FounderPayment(rewardStructures, 200, "yaackz5YDLnFuuX6gGzEs9EMRQGfqmNYjc");
+        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 20}}; // 20% founder/dev fee forever
+        consensus.nFounderPayment = FounderPayment(rewardStructures, 200, "FBA69LP6syGpa3zGiiaQmkSUTY2XrtQbov");
 
 
         vFixedSeeds.clear();
@@ -896,8 +896,8 @@ public:
         nPoolNewMaxParticipants = 20;
         nFulfilledRequestExpireTime = 5 * 60; // fulfilled requests expire in 5 minutes
 
-        // privKey: cVpnZj4dZvRXmBf7Jze1GjpLQb25iKP92GDXUsKdUJTXhXRo2RFA
-        vSporkAddresses = {"yaackz5YDLnFuuX6gGzEs9EMRQGfqmNYjc"};
+        
+        vSporkAddresses = {"F7ceUTJZP9ncaCJWpoDVeHWnFyp2Haq1gs"};
         nMinSporkKeys = 1;
         // devnets are started with no blocks and no MN, so we can't check for upgraded MN (as there are none)
         fBIP9CheckSmartnodesUpgraded = false;
@@ -976,8 +976,8 @@ public:
         consensus.defaultAssumeValid = uint256S("0x00");
 
         consensus.nCollaterals = SmartnodeCollaterals(
-            {{INT_MAX, 10 * COIN}},
-            {{240, 0}, {INT_MAX, 20}});
+            {{INT_MAX, 18000 * COIN}},
+            {{264720, 0}, {INT_MAX, 50}});
 
         pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;
@@ -1010,13 +1010,13 @@ public:
         nPoolMaxParticipants = 5;
         nPoolNewMaxParticipants = 20;
 
-        // privKey: cVpnZj4dZvRXmBf7Jze1GjpLQb25iKP92GDXUsKdUJTXhXRo2RFA
-        vSporkAddresses = {"yaackz5YDLnFuuX6gGzEs9EMRQGfqmNYjc"};
+       
+        vSporkAddresses = {"F7ceUTJZP9ncaCJWpoDVeHWnFyp2Haq1gs"};
         nMinSporkKeys = 1;
         // regtest usually has no smartnodes in most tests, so don't check for upgraged MNs
         fBIP9CheckSmartnodesUpgraded = false;
-        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 5}}; // 5% founder/dev fee forever
-        consensus.nFounderPayment = FounderPayment(rewardStructures, 500, "yaackz5YDLnFuuX6gGzEs9EMRQGfqmNYjc");
+        std::vector<FounderRewardStructure> rewardStructures = {{INT_MAX, 20}}; // 20% founder/dev fee forever
+        consensus.nFounderPayment = FounderPayment(rewardStructures, 266000, "FBA69LP6syGpa3zGiiaQmkSUTY2XrtQbov");
 
         checkpointData = {
             {
