@@ -10,4 +10,9 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "📢 Evento su GitHub: ${{ github.event.head_commit.message }}"
+          message: |
+            📢 Evento GitHub:
+            ▶️ Azione: ${{ github.event_name }}
+            🔧 Repository: ${{ github.repository }}
+            👤 Autore: ${{ github.actor }}
+            💬 Messaggio: ${{ github.event.head_commit.message }}
