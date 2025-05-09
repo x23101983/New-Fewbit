@@ -7,7 +7,7 @@ FewBit harnesses the capabilities of a network consisting of Service Nodes and S
 FewBit is community-governed and operates without a centralized entity, ensuring that decisions are made by and for the community. The project sustains its development through a self-funding mechanism.
 
 ## Enhancing GhostRider
-Building upon the innovative groundwork laid by Raptoreum, FewBit is poised to broaden its horizons, venturing into dynamic sectors such as GameFi and Ecommerce. From the very beginning, we have upheld a commitment to decentralization by refraining from pre-mining FBIT. This principle underscores our dedication to a governance model driven by the community. To sustain our development efforts, 20% of each mined block is allocated to the FewBit team, ensuring continuous growth and innovation.
+Building upon the innovative groundwork laid by Raptoreum, FewBit is poised to broaden its horizons, venturing into dynamic sectors such as GameFi and Ecommerce. From the very beginning, we have upheld a commitment to decentralization by refraining from pre-mining FBIT. This principle underscores our dedication to a governance model driven by the community. Each mined block is distributed transparently: 50% rewards SmartNodes, which secure and support the network; 30% enhances miners through GhostRider, incentivizing robust participation; and 20% is allocated to the FewBit team to ensure continuous development, growth, and innovation.
 
 ## License
 
