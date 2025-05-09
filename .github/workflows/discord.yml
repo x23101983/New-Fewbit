@@ -11,4 +11,5 @@ jobs:
 
       - name: Send message to Discord
         run: |
-          curl -X POST --data-urlencode "payload_json={\"content\": \"📢 Evento GitHub:\n▶️ Azione: ${{ github.event_name }}\n🔧 Repository: ${{ github.repository }}\n👤 Autore: ${{ github.actor }}\n💬 Messaggio: ${{ github.event.head_commit.message }}\"}" ${{ secrets.DISCORD_WEBHOOK }}
+         curl -X POST --data-urlencode "payload_json={\"content\": \"📢 Evento GitHub:\n▶️ Azione: push\n🔧 Repository: x23101983/New-Fewbit\n👤 Autore: x23101983\n💬 Messaggio: Update chainparams.cpp\"}" https://discord.com/api/webhooks/your_webhook_url
+
