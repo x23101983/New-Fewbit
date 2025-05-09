@@ -23,3 +23,9 @@ Tags are created to indicate the official, stable releases of this fork of the F
 [Tags](https://github.com/x23101983/New-Fewbit/tags) 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
+Website: https://sites.google.com/view/fewbit
+Explorer: https://fewbit.online/
+Forum: https://bitcointalk.org/index.php?topic=5496507
+Discord: https://discord.gg/9AKwcPwBkk
+Twitter: @FewBit_Network  https://x.com/FewBit_Network
+Telegram: https://t.me/+eMGB15LzvLk0MGZk
