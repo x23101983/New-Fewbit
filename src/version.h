@@ -11,7 +11,7 @@
  */
 
 
-static const int PROTOCOL_VERSION = 70219;
+static const int PROTOCOL_VERSION = 70220;
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
@@ -19,11 +19,11 @@ static const int INIT_PROTO_VERSION = 209;
 //! disconnect from peers older than this proto version
 static const int OLD_MIN_PEER_PROTO_VERSION = 70213;
 
-static const int MIN_PEER_PROTO_VERSION = 70219;
+static const int MIN_PEER_PROTO_VERSION = 70220;
 
 //! minimum proto version of masternode to accept in DKGs
-static const int OLD_MIN_SMARTNODE_PROTO_VERSION = 70218;
-static const int MIN_SMARTNODE_PROTO_VERSION = 70219;
+static const int OLD_MIN_SMARTNODE_PROTO_VERSION = 70220;
+static const int MIN_SMARTNODE_PROTO_VERSION = 70220;
 
 //! minimum proto version for governance sync and messages
 static const int MIN_GOVERNANCE_PEER_PROTO_VERSION = 70213;
@@ -46,9 +46,9 @@ static const int SENDDSQUEUE_PROTO_VERSION = 70214;
 static const int MIN_COINJOIN_PEER_PROTO_VERSION = 70213;
 
 //! protocol version is included in MNAUTH starting with this version
-static const int MNAUTH_NODE_VER_VERSION = 70218;
+static const int MNAUTH_NODE_VER_VERSION = 70220;
 
 //! introduction of QGETDATA/QDATA messages
-static const int LLMQ_DATA_MESSAGES_VERSION = 70219;
+static const int LLMQ_DATA_MESSAGES_VERSION = 70220;
 
 #endif // BITCOIN_VERSION_H
