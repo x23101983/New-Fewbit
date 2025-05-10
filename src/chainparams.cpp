@@ -478,7 +478,7 @@ public:
     CMainParams()
     {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 262500;            // Note: actual number of blocks per calendar year with DGW v3 is ~200700 (for example 449750 - 249050)
+        consensus.nSubsidyHalvingInterval = 262500;            // Note: every 365 day
         consensus.nSmartnodePaymentsStartBlock = 5761;         //
         consensus.nSmartnodePaymentsIncreaseBlock = 158000;    // actual historical value
         consensus.nSmartnodePaymentsIncreasePeriod = 576 * 30; // 17280 - actual historical value
@@ -633,7 +633,7 @@ public:
     CTestNetParams()
     {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 262500;
+        consensus.nSubsidyHalvingInterval = 150;
         consensus.nSmartnodePaymentsStartBlock = 1000; // not true, but it's ok as long as it's less then nSmartnodePaymentsIncreaseBlock
         consensus.nSmartnodePaymentsIncreaseBlock = 4030;
         consensus.nSmartnodePaymentsIncreasePeriod = 10;
@@ -784,7 +784,7 @@ public:
     CDevNetParams()
     {
         strNetworkID = "devnet";
-        consensus.nSubsidyHalvingInterval = 262500;
+        consensus.nSubsidyHalvingInterval = 150;
         consensus.nSmartnodePaymentsStartBlock = 4010; // not true, but it's ok as long as it's less then nSmartnodePaymentsIncreaseBlock
         consensus.nSmartnodePaymentsIncreaseBlock = 4030;
         consensus.nSmartnodePaymentsIncreasePeriod = 10;
@@ -979,7 +979,7 @@ public:
 
         consensus.nCollaterals = SmartnodeCollaterals(
             {{INT_MAX, 18000 * COIN}},
-            {{264720, 0}, {INT_MAX, 50}});
+            {{5761, 0}, {INT_MAX, 50}});
 
         pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;
