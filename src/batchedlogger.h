@@ -6,6 +6,8 @@
 #ifndef FEWBIT_BATCHEDLOGGER_H
 #define FEWBIT_BATCHEDLOGGER_H
 
+#include <cstdint>
+#include <string>
 #include "tinyformat.h"
 
 class CBatchedLogger
